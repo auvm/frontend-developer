@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+p{
+    color: steelblue;
+    padding: 2px;
+}
+/* pseudoclase activa cuando se
+pasa el cursor por encima */
+p:hover{
+    color: black;
+    background-color: gold;
+    border-radius: 3px;
+    width: max-content;
+    padding: 2px;
+}
+/* el segundo hijo p, dentro del div */
+div p:nth-child(2){
+    color: blue;
+    background-color: greenyellow;
+    border-radius: 3px;
+    width: max-content;
+    padding: 2px;
+}
+p::first-letter{
+    color: purple;
+}
+
+p::before{
+    content: "💾";
+}
+
+p::after{
+    content: "🇲🇽";
+}
+::placeholder{
+    color: darkblue;
+}
+</style>
+<body>
+    <p>Hola, esto es un párrafo.</p>
+    <div>
+        <p>Esto es</p>
+        <p>otro</p>
+        <p>párrafo</p>
+    </div>
+    <input type="text" name="txtNombre" placeholder="nombre">
+</body>
+</html>
