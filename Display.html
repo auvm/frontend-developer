@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        div{
+            background-color: peachpuff;
+            /* Como es un bloque automáticamente ocupa todo el ancho
+            de la pantalla, pero se puede moldear
+            con las siguientes propiedades */
+            width: 200px;
+            height: 200px;
+            margin: 20px;
+
+        }
+        a{
+            background-color: steelblue;
+            /* No funcionan porque es inline, solo ocupa
+            el espacio requerido por su contenido */
+            width: 200px;
+            height: 200px;
+
+            /* Como es enlinea, solo genera margen a
+            los lados, izquierda y derecha */
+            margin: 20px;
+        }
+        button{
+            background-color: slateblue;
+            /* Como es inline-block su visualización es de tipo
+            en linea, pero cuenta con las características de
+            los tipos bloque */
+            width: 200px;
+            height: 200px;
+            margin: 20px;
+
+        }
+    </style>
+</head>
+<body>
+    <div>Bloque</div>
+    <a href="#">inline</a>
+    <button>inline-block</button>
+</body>
+</html>
