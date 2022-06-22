@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display</title>
+
+    <style>
+        body{
+            /* Elimina los bordes de la página */
+            margin: 0;
+        }
+        div{
+            /* ocupa todo el ancho en un principio
+            y tiene propiedades para modificar su tamaño */
+            background-color:salmon;
+            width: 200px;
+            height: 200px;
+            margin: 20px;
+        }
+        a{
+            /* Ocupa solo el espacio de su contenido
+            y no tienen propiedades de los bloque */
+            background-color:burlywood;
+            width: 200px;
+            height: 200px;
+            margin: 20px;
+        }
+        button{
+            /* Los elementos inline-block se visualizan como lementos
+            inline pero tienen caracteristicas de bloque */
+            background-color: darkgoldenrod;
+            width: 200px;
+            height: 200px;
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>Elemento bloque</div>
+    <a href="#">Elemento inline</a>
+    <button>inline-block</button>
+</body>
+</html>
