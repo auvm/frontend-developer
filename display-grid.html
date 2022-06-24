@@ -7,27 +7,57 @@
     <title>Display-Grid</title>
     <style>
         .container{
+            display: grid;
             background-color: peachpuff;
             width: 500px;
             height: 500px;
             /* La propiedad display solo va en 
             los contenedores padre */
-            display: grid;
-            grid-template-columns: 1fr, 1fr, 1fr, 1fr;
-            grid-template-rows: 1fr, 1fr, 1fr, 1fr;
+            
+            /* fr es una fracción del contenido, entodas
+            equivalentes.
+            Se definen las fracciones por columnas y 
+            por filas */
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
         }
-        .item{
+        .container .item:nth-child(1){
+            background-color: yellowgreen;
+            grid-column: 1;
+            grid-row: 1;
+        }
+        .container .item:nth-child(2){
+            background-color: yellowgreen;
+            grid-column: 2;
+            grid-row: 2;
+        }
+        .container .item:nth-child(3){
+            background-color: yellowgreen;
+            grid-column: 3;
+            grid-row: 3;
+        }
+        .container .item:nth-child(4){
+            background-color: yellowgreen;
+            grid-column: 4;
+            grid-row: 4;
+        }
+        /* Por la caida en cascada aplica este fondo
+        y no el yellowgreen anterior */
+        .container .item:nth-child(2n){
             background-color: purple;
         }
+
+        
     </style>
 
 </head>
 <body>
     <div class="container">
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        
     </div>
 </body>
 </html>

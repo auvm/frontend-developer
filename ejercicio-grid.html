@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo Grid</title>
+    <style>
+        .layout{
+            display: grid;
+            grid-template-rows: 50px 40px 200px 50px ;
+            grid-template-columns: 150px auto;
+            grid-gap: 0.5em;
+            grid-template-areas: "image search"
+            ".menu"
+            ".content"
+            ".last";
+            
+        }
+
+        .layout > div{
+            border: 1px solid seagreen;
+        }
+
+        .image{
+            grid-area: image;
+        }
+        .search{
+            grid-area: search;
+        }
+        .container{
+            grid-area: menu;
+            display: flex;
+        }
+        .content{
+            grid-area: content;
+        }
+        .item{
+            padding: 0.5em;
+        }
+        .is-active{
+            color: seagreen;
+            border-bottom: 5px solid seagreen;
+        }
+        .last{
+            grid-area: last;
+        }
+    </style>
+</head>
+<body>
+    <div class="layout">
+        <div class="image">LOGO</div>
+        <div class="search"></div>
+        <div class="container">
+            <div class="item is-active">All</div>
+            <div class="item">Maps</div>
+            <div class="item">News</div>
+            <div class="item">Images</div>
+            <div class="item">Videos</div>
+        </div>
+        <div class="content">Contenido</div>
+        <div class="last">Último contenido</div>
+    </div>
+</body>
+</html>
