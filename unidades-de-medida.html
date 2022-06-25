@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unidades de medida</title>
+
+    <style>
+        /*  px -> medidas absolutas
+            rem, vw, vh -> medidas relativas */
+        body{
+            /* Se hace esta operación para controlar en 
+                10px el font-size equivalente a 1rem
+               100% --> 16px
+                 ?  --> 10px
+                 ? = 62.5 */
+
+            font-size: 62.5%;
+        }
+        div{
+            width:100px;
+            height:100px;
+            background-color: burlywood;
+        }
+        p{
+            font-size: 2rem;
+        }
+        section{
+            /* Medidas relativas */
+            width: 100vw;
+            height: 100vh;
+            background-color: slateblue;
+        }
+        body{
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        Platzi
+    </div>
+    <p>Master</p>
+    <section>
+        Sección del 100 x 100 del campo
+        visible
+    </section>
+</body>
+</html>
